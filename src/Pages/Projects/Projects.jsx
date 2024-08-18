@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import "./projects.css"
 import Navbar from '../../Components/Navbar/Navbar'
 import { Switch } from '@mui/material';
@@ -9,8 +9,20 @@ import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 const Projects = () => {
 
     const {darkTheme,dispatch}=useContext(ThemeContext)
+    const [width,setWidth]=useState(window.innerWidth)
     const projectRef= useRef()
     const [movedNumber,setmovedNumber]=useState(0) 
+
+
+    useEffect(() => {
+      const handleWindowResize = () => setWidth(window.innerWidth)
+      window.addEventListener("resize", handleWindowResize);
+  
+      // Return a function from the effect that removes the event listener
+      return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+  
+  
 
     const handleChange = (event) => {
       dispatch({type:event.target.checked?"on":"off"})
@@ -21,14 +33,14 @@ const Projects = () => {
      if(direction === 'back' && movedNumber > 0)
       {
       
-          projectRef.current.style.transform = `translateX(${position + window.innerWidth+8}px)`
+          projectRef.current.style.transform = `translateX(${position + width+8}px)`
       setmovedNumber(previouNumber => {
        return previouNumber - 1
       })
      }
      if(direction === 'forward' && movedNumber < 1 )
      {
-      projectRef.current.style.transform = `translateX(${position - (window.innerWidth+8)}px)`
+      projectRef.current.style.transform = `translateX(${position - (width+8)}px)`
      setmovedNumber(previouNumber => {
       return previouNumber + 1
      })

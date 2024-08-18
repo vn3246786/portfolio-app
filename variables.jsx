@@ -1,11 +1,17 @@
+import image1 from "./src/assets/videoStreamingClient(1).jpeg"
+import image2 from "./src/assets/videoStreamingClient(2).jpeg"
+import image3 from "./src/assets/videoStreamingAdmin(1).jpeg"
+import image4 from "./src/assets/videoStreamingAdmin(2).jpeg"
+
+
 
 export const projects = [
     {
       title:"Movie-Streaming-App",
-      image:{1:"src/assets/Screenshot 2024-08-12 185710 (1).jpeg",
-        2:"src/assets/Screenshot 2024-08-13 120151 (1).jpeg"
+      image:{1:image1,
+        2:image2
       },
-      link:"",
+      link:"https://video-streaming-app-client.vercel.app/",
       technology:"React, Node js, Express, Mongodb, Stripe, jwt, Scss, postman, material-ui",
       features:[
 
@@ -45,10 +51,10 @@ export const projects = [
     },
     {
       title:"Admin-Panel",
-      image:{1:"src/assets/Screenshot 2024-08-13 110000 (1).jpeg",
-        2:"src/assets/Screenshot 2024-08-13 120514 (1).jpeg"
+      image:{1:image3,
+        2:image4
       },
-      link:"",
+      link:"https://streaming-app-nu-two.vercel.app/",
       technology:"React, Node js, Express, Mongodb,jwt, MUI datagrid, Recharts, Firebase, Scss",
       features:[
           {

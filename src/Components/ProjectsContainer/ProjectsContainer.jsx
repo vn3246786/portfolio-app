@@ -5,8 +5,6 @@ import { projects } from '../../../variables'
 
 const ProjectsContainer = ({projectRef}) => {
 
-const navigate = useNavigate()
-
 
   return (
     <div className='projectsContainer' ref={projectRef}> 
@@ -17,7 +15,7 @@ const navigate = useNavigate()
         <img src={project.image[1]} className='image' alt="" />
         <img src={project.image[2]} className='image' alt="" />
          </div>
-        <button onClick={()=>navigate(project.link)} className='go-to'>open</button>
+        <button onClick={()=>window.location.href=project.link} className='go-to'>open</button>
         <div className="label">Technology used</div>
          <div className="technology">{project.technology}</div>
          <div className="features">Features</div>

@@ -21,15 +21,16 @@
 }
 
 .projectsContainer .container-main .image{
-    width: 500px;
+    width: 32.7%;
    height:250px;
 }
 
 .projectsContainer .container-main .go-to{
 display: block;
-padding: 10px;
-margin: 10px 0px;
-
+padding: 10px 20px;
+margin: 20px 0px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .projectsContainer .container-main .label{
