@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .items-container-off{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navbar .items-container-on{
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    justify-content: center;
+    padding: 20px;
+}

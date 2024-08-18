@@ -1,0 +1,71 @@
+.projectsContainer{
+   width: 100vw;
+    display: flex;
+    transition: 1s all ease;
+    justify-content: space-around;
+}
+
+.projectsContainer .container-main{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.projectsContainer .container-main .title{
+    font-size: 2rem;
+}
+
+.projectsContainer .container-main .image-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.projectsContainer .container-main .image{
+    width: 500px;
+   height:250px;
+}
+
+.projectsContainer .container-main .go-to{
+display: block;
+padding: 10px;
+margin: 10px 0px;
+
+}
+
+.projectsContainer .container-main .label{
+font-size: 2rem;
+text-decoration: underline;
+}
+
+.projectsContainer .container-main .technology{
+font-family: cursive;
+}
+
+.projectsContainer .container-main .feature-container{
+padding: 10px;
+}
+
+.projectsContainer .container-main .features{
+font-size: 2rem;
+text-decoration: underline;
+}
+
+.projectsContainer .container-main .feature-container .feature-title{
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.projectsContainer .container-main .feature-container .feature-title::before{
+    font-size: 1.5rem;
+    content:"\2B50";
+}
+
+.projectsContainer .container-main .feature-container .feature-discription{
+    font-family: cursive;
+    list-style: none;
+}
+
+.projectsContainer .container-main .feature-container .feature-discription::before{
+    margin-left: 20px;
+    content:"\2705";
+}

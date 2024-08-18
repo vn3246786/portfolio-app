@@ -1,0 +1,18 @@
+.aboutMe{
+    padding-left: 20px;
+    min-height: 84vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.aboutMe .info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutMe .image{
+    width: 500px;
+}
