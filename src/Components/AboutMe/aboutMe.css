@@ -5,7 +5,17 @@
     justify-content: space-between;
 }
 
+.aboutMe .contacts-info .info{
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
 
+.aboutMe .contacts-info .info .link{
+text-decoration: none;
+}
 
 .aboutMe .info-container{
     display: flex;
