@@ -1,6 +1,8 @@
 import React from 'react'
 import "./aboutMe.css"
 import { Email, PhoneInTalk } from '@mui/icons-material'
+import profileImage from "../../assets/profile-image.jpg"
+
 
 const AbouteMe = () => {
 
@@ -18,14 +20,16 @@ const AbouteMe = () => {
        <a className='link' href='mailto:vn3246786@gmail.com'>vn3246786@gmail.com</a>
         </div>
       </div>
-<div className="info-container">
+<div className="profile-container">
+  <div className="info-container">
     <div className="title">VIRAJ NAIK</div>
-    <div className="subject">I AM A WEB DEVELOPER</div>
     <div className="info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at voluptatum cum a ut molestias nihil. Earum mollitia obcaecati odio.
+        I am a fullstack web developer skilled in modern technologies such as react, nodejs, mongodb, express etc.I am always willing to learn and adapt to new technologies
     </div>
+    <button className='btn'>Download CV</button>
+  </div>
+      <img src={profileImage} className='image' alt="" />
 </div>
-      <img src="src\assets\react.svg" className='image' alt="" />
     </div>
   )
 }

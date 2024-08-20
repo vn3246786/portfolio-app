@@ -7,8 +7,12 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import { Code, LaptopChromebook,} from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 export default function CustomizedTimeline() {
+
+const navigate = useNavigate()
+
   return (
     <Timeline sx={{
       [`& .${timelineItemClasses.root}:before`]: {
@@ -20,7 +24,7 @@ export default function CustomizedTimeline() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <Code/>
+          <LaptopChromebook/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -28,22 +32,24 @@ export default function CustomizedTimeline() {
           <Typography variant="h6" component="span">
             Skills
           </Typography>
-          <Typography>{"HTML, css, javascript"}</Typography>
+          <Typography>{"HTML, css, javascript, React, express, nodejs, mongodb"}</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <LaptopChromebook/>
+           <Code/>
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
-            Technologies
+            Experience
           </Typography>
-          <Typography>React, express, nodejs, mongodb</Typography>
+          <Typography>Built multiple fullstack web applications(MERN) with complex functionalities for more information click
+          <span style={{color:"blue",cursor:"pointer"}} onClick={()=>navigate("/projects")}>{" here"}</span>
+             </Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

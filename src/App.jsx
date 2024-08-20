@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import About from "./Pages/About/About"
 import "./app.css"
 import Projects from "./Pages/Projects/Projects"
-import Experience from "./Pages/Experience/Experience"
+import Skills from "./Pages/Skills/Skills"
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
   <Routes>
     <Route path="/" element={<About/>}/>
     <Route path="/projects" element={<Projects/>}/>
-    <Route path="/experience" element={<Experience/>}/>
+    <Route path="/Skills" element={<Skills/>}/>
   </Routes>
   </BrowserRouter>
     </div>

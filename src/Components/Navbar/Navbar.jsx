@@ -18,9 +18,9 @@ const Navbar = ({darkTheme,page}) => {
         path:"/projects"
     },
         {
-        name:"Experience",
-        selected:page==="Experience"?true:false,
-        path:"/experience"
+        name:"Skills",
+        selected:page==="Skills"?true:false,
+        path:"/Skills"
     },
 ])
 

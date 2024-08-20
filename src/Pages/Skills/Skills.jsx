@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import "./experience.css"
+import "./skills.css"
 import { Switch } from '@mui/material';
 import { ThemeContext } from '../../ThemeContextProvider/ThemeContextProvider';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -14,11 +14,11 @@ const Experience = () => {
   }
 
   return (
-    <div className='experience' style={
+    <div className='skills' style={
       {backgroundColor:darkTheme?"black":"white",
           color:darkTheme?"white":"black"
       }}>
-      <Navbar darkTheme={darkTheme} page="Experience"/>
+      <Navbar darkTheme={darkTheme} page="Skills"/>
       <Switch  
       checked={darkTheme}
       onChange={handleChange}

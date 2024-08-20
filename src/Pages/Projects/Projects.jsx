@@ -15,7 +15,11 @@ const Projects = () => {
 
 
     useEffect(() => {
-      const handleWindowResize = () => setWidth(window.innerWidth)
+      const handleWindowResize = () => {
+        setWidth(window.innerWidth)
+      projectRef.current.style.transform = `translateX(${8}px)`
+      setmovedNumber(0)
+      }
       window.addEventListener("resize", handleWindowResize);
   
       // Return a function from the effect that removes the event listener

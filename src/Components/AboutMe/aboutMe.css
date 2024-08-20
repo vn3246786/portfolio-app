@@ -1,8 +1,7 @@
 .aboutMe{
     padding-left: 20px;
-    min-height: 84vh;
-    display: flex;
-    justify-content: space-between;
+    min-height: 81vh;
+  
 }
 
 .aboutMe .contacts-info .info{
@@ -17,12 +16,36 @@
 text-decoration: none;
 }
 
-.aboutMe .info-container{
+.aboutMe .profile-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
 }
 
-.aboutMe .image{
-    width: 500px;
+.aboutMe .profile-container .info-container .title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.aboutMe .profile-container .info-container .info{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.aboutMe .profile-container .info-container .btn{
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.aboutMe .profile-container .image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
 }

@@ -46,6 +46,10 @@ font-family: cursive;
 padding: 10px;
 }
 
+.projectsContainer .container-main .title{
+margin-bottom: 20px;
+}
+
 .projectsContainer .container-main .features{
 font-size: 2rem;
 text-decoration: underline;

@@ -12,12 +12,12 @@ export const projects = [
         2:image2
       },
       link:"https://video-streaming-app-client.vercel.app/",
-      technology:"React, Node js, Express, Mongodb, Stripe, jwt, Scss, postman, material-ui",
+      technology:"React, Node js, Express, Mongodb, Stripe, jwt, Scss, postman, material-ui, multer, firebase",
       features:[
 
         {
-            title:"Jwt authentication",
-            discription:"Refreshe tokens feature for enhanced security"
+            title:"Get Recommendation",
+            discription:"Get recommendations based on recent activity"
         },
         {
             title:"Stripe subscription",
@@ -30,6 +30,10 @@ export const projects = [
         {
             title:"Forgot password",
             discription:"OTP verification by email"
+        },
+        {
+            title:"Jwt authentication",
+            discription:"Refresh tokens feature for enhanced security"
         },
         {
             title:"Add to watchlist",
@@ -55,7 +59,7 @@ export const projects = [
         2:image4
       },
       link:"https://streaming-app-nu-two.vercel.app/",
-      technology:"React, Node js, Express, Mongodb,jwt, MUI datagrid, Recharts, Firebase, Scss",
+      technology:"React, Node js, Express, Mongodb,jwt, MUI datagrid, Recharts, Firebase, Scss, multer",
       features:[
           {
               title:"Tables(users, products, lists)",
