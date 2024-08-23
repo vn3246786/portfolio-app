@@ -7,7 +7,7 @@ import image4 from "./src/assets/videoStreamingAdmin(2).jpeg"
 
 export const projects = [
     {
-      title:"Movie-Streaming-App",
+      title:"Video-Streaming-App",
       image:{1:image1,
         2:image2
       },
@@ -30,6 +30,10 @@ export const projects = [
         {
             title:"Forgot password",
             discription:"OTP verification by email"
+        },
+        {
+            title:"Add ratings",
+            discription:null
         },
         {
             title:"Jwt authentication",
