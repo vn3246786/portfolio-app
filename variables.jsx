@@ -2,7 +2,8 @@ import image1 from "./src/assets/videoStreamingClient(1).jpeg"
 import image2 from "./src/assets/videoStreamingClient(2).jpeg"
 import image3 from "./src/assets/videoStreamingAdmin(1).jpeg"
 import image4 from "./src/assets/videoStreamingAdmin(2).jpeg"
-
+import image5 from "./src/assets/chat-app-1.jpeg"
+import image6 from "./src/assets/chat-app-2.jpeg"
 
 
 export const projects = [
@@ -63,7 +64,7 @@ export const projects = [
         2:image4
       },
       link:"https://streaming-app-nu-two.vercel.app/",
-      technology:"React, Node js, Express, Mongodb,jwt, MUI datagrid, Recharts, Firebase, Scss, multer",
+      technology:"React, Node js, Express, Mongodb, jwt, MUI datagrid, Recharts, Firebase, Scss, multer",
       features:[
           {
               title:"Tables(users, products, lists)",
@@ -93,6 +94,28 @@ export const projects = [
             title:"Firebase storage",
             discription:"Images and videos are stored in Firebase, and links to them are stored in MongoDB."
         },
+      ]
+    },
+    {
+      title:"Chat-App",
+      image:{1:image5,
+        2:image6
+      },
+      link:"https://streaming-app-nu-two.vercel.app/",
+      technology:"React, Typescript, Tailwind css, Node js, Express, Mongodb, Socket.io",
+      features:[
+          {
+              title:"Real time chat using socket.io",
+              discription:null
+          },
+          {
+              title:"Chats stored in database",
+              discription:null
+          },
+          {
+              title:"Moniter number of unread and latest messages",
+              discription:null
+          },
       ]
     },
    

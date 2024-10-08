@@ -14,18 +14,7 @@ const Projects = () => {
     const [movedNumber,setmovedNumber]=useState(0) 
 
 
-    useEffect(() => {
-      const handleWindowResize = () => {
-        setWidth(window.innerWidth)
-      projectRef.current.style.transform = `translateX(${8}px)`
-      setmovedNumber(0)
-      }
-      window.addEventListener("resize", handleWindowResize);
-  
-      // Return a function from the effect that removes the event listener
-      return () => window.removeEventListener("resize", handleWindowResize);
-    }, []);
-  
+    
   
 
     const handleChange = (event) => {
@@ -42,7 +31,7 @@ const Projects = () => {
        return previouNumber - 1
       })
      }
-     if(direction === 'forward' && movedNumber < 1 )
+     if(direction === 'forward' && movedNumber < 2 )
      {
       projectRef.current.style.transform = `translateX(${position - (width+8)}px)`
      setmovedNumber(previouNumber => {
@@ -64,7 +53,7 @@ const Projects = () => {
       />
        <div className="scrollbar">
             <ArrowBackIos onClick = {()=> {moveContainer('back')}}/>
-            <div className="project-number">{`${movedNumber+1}/2`}</div>
+            <div className="project-number">{`${movedNumber+1}/3`}</div>
             <ArrowForwardIos onClick = {()=> {moveContainer('forward')}}/>
         </div>
       <ProjectsContainer darkTheme={darkTheme} projectRef={projectRef}/>
