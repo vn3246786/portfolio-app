@@ -101,7 +101,7 @@ export const projects = [
       image:{1:image5,
         2:image6
       },
-      link:"https://streaming-app-nu-two.vercel.app/",
+      link:"https://chat-app-ten-neon.vercel.app/",
       technology:"React, Typescript, Tailwind css, Node js, Express, Mongodb, Socket.io",
       features:[
           {
