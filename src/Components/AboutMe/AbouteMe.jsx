@@ -2,6 +2,7 @@ import React from 'react'
 import "./aboutMe.css"
 import { Email, PhoneInTalk } from '@mui/icons-material'
 import profileImage from "../../assets/profile-image.jpg"
+import Resume from "../../assets/RESUME.pdf"
 
 
 const AbouteMe = () => {
@@ -26,7 +27,7 @@ const AbouteMe = () => {
     <div className="info">
         I am a fullstack web developer skilled in modern technologies such as react, nodejs, mongodb, express etc.I am always willing to learn and adapt to new technologies
     </div>
-    <button className='btn'>Download CV</button>
+    <a href={Resume} download="Resume" className='btn'>Download CV</a>
   </div>
       <img src={profileImage} className='image' alt="" />
 </div>
