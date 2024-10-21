@@ -20,7 +20,7 @@ const ProjectsContainer = ({projectRef}) => {
          <div className="technology">{project.technology}</div>
          <div className="features">Features</div>
          {project.features.map((feature,i)=>{
-           return <div className="feature-container">
+           return <div key={i} className="feature-container">
             <li className="feature-title">{feature.title}</li>
             {feature.discription&&<li className="feature-discription">{feature.discription}</li>}
         </div>
