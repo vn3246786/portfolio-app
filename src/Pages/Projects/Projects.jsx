@@ -26,14 +26,14 @@ const Projects = () => {
      if(direction === 'back' && movedNumber > 0)
       {
       
-          projectRef.current.style.transform = `translateX(${position + width+8}px)`
+          projectRef.current.style.transform = `translateX(${position + width+10}px)`
       setmovedNumber(previouNumber => {
        return previouNumber - 1
       })
      }
      if(direction === 'forward' && movedNumber < 2 )
      {
-      projectRef.current.style.transform = `translateX(${position - (width+8)}px)`
+      projectRef.current.style.transform = `translateX(${position - (width+10)}px)`
      setmovedNumber(previouNumber => {
       return previouNumber + 1
      })

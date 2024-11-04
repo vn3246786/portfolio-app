@@ -1,20 +1,29 @@
+@media screen and (max-width:770px){
+    .projectsContainer .container-main .image-container{
+    }
+}
+
+
 .projectsContainer{
-   width: 100vw;
     display: flex;
     transition: 1s all ease;
+    gap: 10px;
     justify-content: space-around;
 }
 
+
 .projectsContainer .container-main{
-    padding-left: 20px;
     padding-bottom: 10px;
 }
 
 .projectsContainer .container-main .title{
+    margin-left: 15px;
     font-size: 2rem;
 }
 
 .projectsContainer .container-main .image-container{
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -34,29 +43,35 @@ margin-right: auto;
 }
 
 .projectsContainer .container-main .label{
+    margin-left: 15px;
 font-size: 2rem;
 text-decoration: underline;
 }
 
 .projectsContainer .container-main .technology{
+    margin-left: 15px;
 font-family: cursive;
 font-size: 2rem;
 }
 
 .projectsContainer .container-main .feature-container{
+    margin-left: 10px;
 padding: 10px;
 }
 
 .projectsContainer .container-main .title{
+    margin-left: 15px;
 margin-bottom: 20px;
 }
 
 .projectsContainer .container-main .features{
+    margin-left: 15px;
 font-size: 2rem;
 text-decoration: underline;
 }
 
 .projectsContainer .container-main .feature-container .feature-title{
+    margin-left: 10px;
     font-size: 1.5rem;
     list-style: none;
 }
@@ -67,6 +82,7 @@ text-decoration: underline;
 }
 
 .projectsContainer .container-main .feature-container .feature-discription{
+    margin-left: 10px;
     font-family: cursive;
     list-style: none;
 }

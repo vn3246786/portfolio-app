@@ -32,7 +32,7 @@ const navigate = useNavigate()
           <Typography variant="h6" component="span">
             Skills
           </Typography>
-          <Typography>{"HTML, css, javascript, React, express, nodejs, mongodb"}</Typography>
+          <Typography>{"HTML, css, javascript, typescript, React, express, nodejs, mongodb, socket.io"}</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
